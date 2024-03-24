@@ -1,0 +1,64 @@
+/*body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    width: 100%;
+    background-color: #404558;
+
+}
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+}
+nav li{
+    border-right: 2px solid #00ffff;
+    
+    list-style-type: none;
+    height: 40px;
+    display: inline-block;
+     text-align: center;
+     line-height: 40px;
+}
+nav a{
+    text-decoration: none;
+    padding: 20px 30px;
+    color: #fff;
+}
+nav li:hover{
+    background-color: orangered;
+}
+*/
+nav.menu-nav ul li.btn{
+       display: inline-block;
+    list-style-type: none;
+}
+nav ul{
+    background-color: #424558;
+    height: 40px;
+    line-height: 40px;
+
+}
+nav{
+    
+    width: 100%;
+}
+nav > ul > li a{
+    text-decoration: none;
+    font-style: italic;
+    font-size: 40px;
+    padding: 20px 30px;
+    color: #fff;
+}
+nav li:hover {
+    border-right: 2px solid #fff;
+    
+    height: 40px;
+    background-color: red;
+   }
+   nav > ul > li:hover a {
+    transition: 3s all;
+    padding: 15px 30px 20px 30px;
+    color: blue;
+   }

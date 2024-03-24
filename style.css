@@ -1,0 +1,156 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    width: 100%;
+    background-color: #424558;
+}
+nav a{
+    text-decoration: none;
+    display: inline-block;
+}
+nav ul{
+    margin: 0px;
+    padding: 0px;
+}
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav li{
+    list-style-type: none;
+}
+nav > ul > li{
+    float: left;
+    position: relative;
+    padding: 12px;
+}
+nav > ul > li >a{
+    font-style: italic;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    color: #ffff;
+}
+nav > ul > li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+.submenu{
+    display: none;
+}
+nav input[type=checkbox]{
+    display: none;
+}
+nav label{
+    display: none;
+}
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+.submenu li a{
+    font-style: italic;
+    padding: 15px 30px;
+    width: 270px;
+    font-size: 14px;
+    color: #222358;
+}
+.submenu li{
+    border-bottom: 1px solid #000000;
+
+}
+.menu-html:hover{
+    border-top: 5px solid #32cd32;
+   background-color: rgba(255, 20, 147 );
+}
+.menu-css:hover{
+    border-top: 5px solid #0000cd;
+    background-color: rgba(220, 20, 60, 0.15);
+}
+.menu-js:hover{
+    border-top: 5px solid #ffd700;
+    background-color: rgba(30, 140, 255, 0.15);
+}
+.menu-ph:hover{
+    border-top: 5px solid #bb08bb;
+    background-color: rgba(218, 112, 214,0.15 );
+}
+.menu-c:hover{
+    border-top: 5px solid #0000cd;
+    background-color: rgba(255, 69, 0,0.15)
+}
+.menu-con:hover{
+    border-top: 5px solid #87ceeb;
+    background-color: rgba(255, 69, 0, );
+}
+.menu-html .submenu li{
+    background-color: #ffdead;
+}
+.menu-css .submenu li{
+    background-color: #b0c4de;
+}
+.menu-js .submenu li{
+    background-color: #ff69b4;
+}
+.menu-ph .submenu li{
+    background-color: #D8BFD8;
+}
+.menu-c .submenu li{
+    background-color: #FF00FF;
+}
+.submenu li:hover a{
+    color: #E0FFFF;
+}
+.submenu li:hover{
+    background-color: #FF6347;
+}
+nav input[type=checkbox]:checked ~ ul{
+    display: block;
+}
+
+@media only screen and (max-width: 780px) {
+    .menu-mobile{
+        font-style: italic;
+        display: block;
+        text-align: center;
+        background-color: #008080;
+        color: #e0ffff;
+        padding: 12px 0px;
+
+    }
+    nav ul{
+        display: none;
+    }
+    nav ul li,nav ul li a{
+        text-align: center;
+        width: 100%;
+    }
+    nav ul li a,nav ul li:hover a{
+        padding: 10px 0px;
+    }
+    nav li:hover .submenu{
+        display: block;
+        position: static;
+    }
+    img{
+        width: 100%;
+        text-align: center;
+    }
+        
+}
+footer{
+    font-style: italic;
+    border-bottom: 3px solid black;
+    text-align: center;
+    text-transform: uppercase;
+    padding:10px 20px;
+
+    background-color: #424558;
+    color: #b0c4de;
+}
